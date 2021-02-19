@@ -1,0 +1,21 @@
+<h1>Editing team</h1>
+
+<%= form_with model: @team do |form| %>
+    
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :strength %>
+      <%= form.number_field :strength %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+
+<%= link_to 'Show', @team %> |
+<%= link_to 'Back', teams_path %>

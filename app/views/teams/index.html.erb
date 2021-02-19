@@ -1,0 +1,12 @@
+<h1>The teams list</h1>
+<ul>
+  <% @teams.each do |team| %>
+    <li>
+    <%= link_to team.name, team %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "You can add a team here", new_team_path %>
+<br>
+
+<%= link_to "Back", root_path%>

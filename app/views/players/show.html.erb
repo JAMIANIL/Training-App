@@ -1,0 +1,13 @@
+<h1><%= @player.name %></h1>
+
+<p><%= @player.dob %></p>
+
+<p><%= @player.matches %></p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
+
+<li><%= link_to "Destroy", player_path(@player),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
