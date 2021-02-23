@@ -1,11 +1,35 @@
-<h1><%= @team.name %></h1>
 
-<p><%= @team.strength%></p>
+<table style="width:100%">
+<tr>
+  <th>Team-Name </th>
+  <td><%= @team.name %></td>
+</tr>
+<tr>
+  <th>Team-Strength</th>
+  <td><%= @team.strength%></td>
+</tr>
+<tr>
+  <th>Team-Id</th>
+  <td><%= @team.id%></td>
+</tr>
+<tr>
+  <th>Has players from</th>
+  <td><% @team.countries.uniq.each do |x| %>
+    <li>
+    <%= x.name %>
+    </li>
+  <% end %></td>
+</tr>
+</table> 
 
 
-<%= link_to 'Edit', edit_team_path(@team) %> |
+<br>
+
+
+<%= link_to 'Edit', edit_team_path(@team) %> 
+<br>
 <%= link_to 'Back', teams_path %>
 
-<li><%= link_to "Destroy", team_path(@team),
+<li><%= link_to "Delete", team_path(@team),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>

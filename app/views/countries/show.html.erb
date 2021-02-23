@@ -1,0 +1,32 @@
+<table style="width:100%">
+<tr>
+  <th>Country-Name </th>
+  <td><%= @country.name %></td>
+</tr>
+<tr>
+  <th>Players-representing</th>
+  <td><%= @country.players_representing%></td>
+</tr>
+<tr>
+  <th>Country-Id</th>
+  <td><%= @country.id%></td>
+</tr>
+<tr>
+  <th>Teams from this country</th>
+  <td><% @country.teams.uniq.each do |x| %>
+    <li>
+    <%= x.name %>
+    </li>
+  <% end %></td>
+</tr>
+</table> 
+
+<br>
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> <br>
+<%= link_to 'Back', countries_path %>
+<br>
+<li><%= link_to "Delete", country_path(@country),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>

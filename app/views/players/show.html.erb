@@ -1,13 +1,35 @@
-<h1><%= @player.name %></h1>
+<table style="width:100%">
+<tr>
+  <th>Player-Name </th>
+  <td><%= @player.name %></td>
+</tr>
+<tr>
+  <th>Born on</th>
+  <td><%= @player.dob%></td>
+</tr>
+<tr>
+  <th>Total IPL matches played</th>
+  <td><%= @player.matches%></td>
+</tr>
+<tr>
+  <th>Team representing</th>
+  <td><%= @player.team.name%></td>
+</tr>
+<tr>
+  <th>Country belongs to</th>
+  <td><%= @player.country.name%></td>
+</tr>
+<tr>
+  <th>Age is</th>
+  <td><%= @player.calculate_age%></td>
+</tr>
+</table> 
 
-<p><%= @player.dob %></p>
+<br>
+<%= link_to 'Click to Edit', edit_player_path(@player) %> 
+<br>
+<%= link_to 'Click to go Back', players_path %>
 
-<p><%= @player.matches %></p>
-
-
-<%= link_to 'Edit', edit_player_path(@player) %> |
-<%= link_to 'Back', players_path %>
-
-<li><%= link_to "Destroy", player_path(@player),
+<li><%= link_to "Delete", player_path(@player),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>

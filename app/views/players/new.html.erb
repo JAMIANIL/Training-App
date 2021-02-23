@@ -22,12 +22,22 @@
 
   <div class="field">
     <%= form.label :dob %>
-    <%= form.datetime_select :dob %>
+    <%= form.datetime_select :dob,start_year: 1980 %>
   </div>
 
   <div class="field">
     <%= form.label :matches %>
     <%= form.number_field :matches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :team %>
+    <%= form.collection_select(:team_id,Team.all, :id, :name)%>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.collection_select(:country_id,Country.all, :id, :name)%>
   </div>
 
   <div>

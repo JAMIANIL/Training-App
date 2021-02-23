@@ -1,0 +1,19 @@
+<h1>Editing country</h1>
+
+<%= form_with model: @country do |form| %>
+    
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+      <br/>
+      <%= form.label :players_representing %>
+      <%= form.number_field :players_representing %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+
+<%= link_to 'Show', @country %> |
+<%= link_to 'Back', countries_path %>

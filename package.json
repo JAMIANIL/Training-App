@@ -1,7 +1,6 @@
 {
   "name": "temp",
   "private": true,
-  "homepage":"https://github.com/JAMIANIL/Training-App.git",
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",

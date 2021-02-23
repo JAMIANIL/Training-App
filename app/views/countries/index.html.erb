@@ -1,0 +1,12 @@
+<h1>The countries list</h1>
+<ul>
+  <% @countries.each do |country| %>
+    <li>
+    <%= link_to country.name, country %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "You can add a country here", new_country_path %>
+<br>
+
+<%= link_to "Home", root_path%>
