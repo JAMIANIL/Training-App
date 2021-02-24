@@ -1,0 +1,14 @@
+body{
+
+    background: url(https://images6.alphacoders.com/105/thumb-1920-1050906.jpg) no-repeat center fixed;     
+    background-size: cover;
+
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(192, 80, 80);
+}
