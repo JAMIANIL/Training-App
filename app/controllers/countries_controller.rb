@@ -40,9 +40,11 @@ class CountriesController < ApplicationController
  
    def destroy
      @country  = Country.find(params[:id])
-     @country.destroy
- 
-     redirect_to root_path
+     if @country.destroy
+      redirect_to root_path
+     else
+      raise "This is an exception"
+     end
    end
  
    private

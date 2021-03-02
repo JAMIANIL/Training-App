@@ -5,15 +5,24 @@ class Player < ApplicationRecord
     validates :name, length: { minimum: 2 }
     validates :matches, numericality: { greater_than_or_equal_to: 0 }
 
-    before_validation :normalize_name, on: [:create,:edit]
-
-    def calculate_age
-      return Time.now.year-self.dob.year
+    after_initialize do |player|
+      puts "You have initialized an object!"
     end
 
-    private
-    def normalize_name 
-      self.name = name.downcase.titleize
-    end 
-    
+    after_find do |user|
+      puts "You have found an object!"
+    end
+
+    after_destroy :log_destroy_action
+
+    def log_destroy_action
+     puts 'Player destroyed'
+    end
+
+
+    def calculate_age
+      return ((Time.now - self.dob.to_time)/1.year.seconds).floor
+    end
+
+      
 end

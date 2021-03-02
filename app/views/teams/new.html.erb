@@ -1,3 +1,19 @@
+<%= form_with(model: Team) do |form| %>
+  <% if @team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team.errors.count, "error") %> Team can't be saved:</h2>
+
+      <ul>
+        <% @team.errors.each do |error| %>
+          <li class="class1"><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
 <h1>Create Team</h1>
 
 <%= form_with model: @team do |form| %>
@@ -15,4 +31,6 @@
   <div>
     <%= form.submit %>
   </div>
+
+<% end %>
 <% end %>

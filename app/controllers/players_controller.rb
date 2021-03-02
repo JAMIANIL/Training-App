@@ -49,6 +49,4 @@ class PlayersController < ApplicationController
    def player_params
      params.require(:player).permit(:name, :dob, :matches, :team_id, :country_id)
    end
-
-
 end

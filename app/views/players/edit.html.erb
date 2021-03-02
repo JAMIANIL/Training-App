@@ -9,7 +9,7 @@
   
     <div class="field">
       <%= form.label :dob %>
-      <%= form.datetime_select :dob %>
+      <%= form.datetime_select :dob ,start_year:1980%>
     </div>
   
     <div class="field">
@@ -19,12 +19,12 @@
 
     <div class="field">
     <%= form.label :team %>
-    <%= form.number_field :team_id %>
+    <%= form.collection_select(:team_id,Team.all, :id, :name)%>
     </div>
 
     <div class="field">
     <%= form.label :country %>
-    <%= form.number_field :country_id %>
+    <%= form.collection_select(:country_id,Country.all, :id, :name)%>
     </div>
 
 
@@ -34,3 +34,17 @@
   <% end %>
 <%= link_to 'Show', @player %> |
 <%= link_to 'Back', players_path %>
+
+<%= form_with(model: Player) do |form| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> Player can't be saved:</h2>
+
+      <ul>
+        <% @player.errors.each do |error| %>
+          <li class="class1"><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% end %>

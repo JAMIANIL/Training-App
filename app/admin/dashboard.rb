@@ -9,6 +9,16 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
+    section "Recent Players" do
+      table_for Player.order("created_at DESC").limit(5) do
+        column :name do |player|
+          link_to player.name,[:admin, player]
+        end
+        column:created_at
+      end
+      strong { link_to "View All Players",admin_players_path }
+    end
+
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
