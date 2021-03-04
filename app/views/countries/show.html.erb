@@ -12,7 +12,7 @@
   <td><%= @country.id%></td>
 </tr>
 <tr>
-  <th>Teams from this country</th>
+  <th>Players playing for </th>
   <td><% @country.teams.uniq.each do |x| %>
     <li>
     <%= x.name %>

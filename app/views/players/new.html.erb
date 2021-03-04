@@ -5,7 +5,7 @@
 
       <ul>
         <% @player.errors.each do |error| %>
-          <li><%= error.full_message %></li>
+          <li class="class1"><%= error.full_message %></li>
         <% end %>
       </ul>
     </div>
@@ -22,7 +22,7 @@
 
   <div class="field">
     <%= form.label :dob %>
-    <%= form.datetime_select :dob,start_year: 1980 %>
+    <%= form.datetime_select :dob,start_year: 1980,end_year: Time.now.year %>
   </div>
 
   <div class="field">

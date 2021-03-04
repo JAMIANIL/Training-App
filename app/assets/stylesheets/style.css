@@ -1,0 +1,38 @@
+body{
+
+    background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUXFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALwBCwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EACMQAQEBAQADAQABBAMAAAAAAAABEQISITFBUXGx0fADgcH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9ol0WGRddfQZokMVoKRRGAeIF1V/6C6noaeUCi00dAtXkyLAaqlZIGKwRWgLDDQCsEPVQI6sFBSrRydA+R56YQOlrGtaLAWmdDRYDXNNZkbgLsThrp05gONmMV0/5KYDn1z6Wm1kGlazplBaoz0qDVoEQGLQQCqqAQmKgktQHEGpAGjDYKCkVPxcgBjfTFAjVIgTeuZ5B0iEq0HW/lZ56XXTFn0Dv+VaxVP4BaozSChi6voQCNasZkA2NRlSguw0ARENAxitIGSsVgKHWYdA2q1m0gDBGuaAVVWgopAoBrUjLXAKwN1kDyy1aNBmLE0DMgasAL8MjMbgBG0UDVOYyLQaz2Manw8+gEgq0QFhptADUeogAw6LQUKw0GTDhkBiiOnTEBahTAJ0ADtWpA32Kd+LufkBinn4IeQSkTQMU8nqCApDi1c0BYqasBlKxcwFeTFqsAwVSKgotFpvwGYVIaAMjMptBqHuuZlBuQWFYDGJvxZ6gCU2KNAzjOt9IBK6cOc51X0B7/urWeoqB1RkgeqfxjTQa/FIyeaCv8K1jrr2zz16oOpjle/RnfoGqtY8xewdNVrPHQ67/gGqx5idX+pn6DpqY8qb160DVGZdaBYpUoDWryYrUgN+Q1lAelKqqBlakc2oDXPpizSJQHVBogKBIClyQCIgM9QXlu1Az1yMrYBnxqvFbasByy/7/Q8RtQGZxfg8b7b8kDN5voeHr22egcpLnpvnm57+mNaDNM5Va5BjC1YzgCrW6zYC1BAmmUAlKtGglI1BKCBogKFrj7/0qAqkX4YAkZrdg69gym/FkBDFjMBpKgFDRTzQMCioHmBQgeYeiuwYnTUZ8TQXVFpZBWqowAqYaDMDpRZ6Bjk1SKAlUgUS1AdOswaDdqtZlQEc0aYB0RGAAmgVZhWAWdIkBRsLQOn6zo5oNfoqiARWKNUGIUQWs6QDrbMjHUVXVA2fgq5FArBq0FiwxQBIq1RYA0cmxcwGWopy0DNia6jNAKogDoxQDIjVoANAEjinIC1QY1zQWLo+QsAI4sAYsahASDRKgb6jOHVKDOLxaHQKjGrABkNEVoDlSDSC1rmMUygKsRoBRNYAikWGwFoxGQBiKoA2mQdABWmaA1rRYugK0KAZW4xgAWHW5B1yDNWoguWqNF+AtWDGgFHSoBrnk9cst9AxDh5PX0GLEbDyDOmU2MgbV5DqLn6DXKpogIU2qgWWzn9gYHJ6UgNVm8t8M9AMZbjMgKVKmcg//9k=) no-repeat center fixed;     
+    background-size: cover;
+
+    text-align: center;
+
+}
+
+
+.class1{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(230, 18, 18);    
+}
+h1{
+    font-weight: bold;
+    color:black;
+}
+input[type=number] {
+    width:10%;
+  }
+
+  a:link, a:visited {
+    color: rgb(49, 14, 14);
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+
+table, th, td {
+    color:rgb(2, 2, 2);
+    text-align: left;
+    border: 1px solid black;
+  }

@@ -30,7 +30,7 @@ class TeamsController < ApplicationController
      end
    end
  
-   def create
+   def create 
      @team = Team.new(team_params)
  
      if @team.save
@@ -53,6 +53,5 @@ class TeamsController < ApplicationController
     def team_params
       params.require(:team).permit(:name, :strength)
     end
- 
  
 end
