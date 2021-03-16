@@ -10,6 +10,8 @@ RSpec.describe Country, type: :model do
     end
   end
 
+
+
    context "Invalid" do
     it "is not valid without a name"do
       @country=Country.create(name:nil, players_representing:20)

@@ -17,7 +17,7 @@ RSpec.describe Player, type: :model do
 
    it "is not valid with a name of 1 letter"do
    @player=Player.create(name:"A",dob:Time.now,matches:25,team_id:Team.create(name:"Tm", strength:23).id,country_id:Country.create(name:"Cn",players_representing:54).id)
-   expect(@player).to_not be_valid
+   expect(@player).to_not be_valid 
    end
 
    it "is not valid with a negative value for matches"do
